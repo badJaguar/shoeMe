@@ -11,6 +11,6 @@ If any product does not contain a discount, it is not displayed in the interface
 We will take as a basis a website called 6pm.com.
 
 # Main features
-+ [Delivery scheme](#delivery);
++ [Delivery scheme](https://github.com/badJaguar/shoeMe/blob/master/delivery);
   
   
