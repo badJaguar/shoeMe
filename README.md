@@ -9,5 +9,8 @@ In order to develop ourselves, we create a project that will be written on a thr
 + Prices should contain 15% profit.
 If any product does not contain a discount, it is not displayed in the interface of the website.
 We will take as a basis a website called 6pm.com.
+
+# Main features
++ [Delivery scheme](#delivery);
   
   
