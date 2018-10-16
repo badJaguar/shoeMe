@@ -11,6 +11,9 @@ If any product does not contain a discount, it is not displayed in the interface
 We will take as a basis a website called 6pm.com.
 
 # Main features
+
+Delivery scheme
+--------------------------  
 ![Delivery Scheme](https://raw.githubusercontent.com/badJaguar/shoeMe/master/Screenshot_3.png)
   
   
