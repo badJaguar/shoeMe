@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2046
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoeMeDear", "ShoeMeDear\ShoeMeDear.csproj", "{BF7F6DD5-369A-4326-A822-6B781871678F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoeMeDear.Web", "ShoeMeDear\ShoeMeDear.Web.csproj", "{BF7F6DD5-369A-4326-A822-6B781871678F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataAccess", "DataAccess", "{3AD629D8-2C6E-4D72-8907-482A12F707E2}"
 EndProject
