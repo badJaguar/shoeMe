@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ShoeMeDear.DataAccess.Common.Cotexts
+namespace ShoeMeDear.DataAccess.Common.Contexts
 {
     public interface IDatabase : IDisposable
     {
