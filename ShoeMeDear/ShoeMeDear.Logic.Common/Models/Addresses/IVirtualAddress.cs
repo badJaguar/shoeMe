@@ -1,6 +1,6 @@
 ﻿namespace ShoeMeDear.Logic.Common.Models.Addresses
 {
-    public interface VirtualAddress
+    public interface IVirtualAddress
     {
     }
 }
