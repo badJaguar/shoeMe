@@ -42,6 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Factories\IServiceFactory.cs" />
+    <Compile Include="Models\Addresses\IAddress.cs" />
+    <Compile Include="Models\Addresses\IVirtualAddress.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -60,7 +62,6 @@
   <ItemGroup>
     <Folder Include="Attributes\" />
     <Folder Include="Exceptions\" />
-    <Folder Include="Models\" />
     <Folder Include="Resources\" />
     <Folder Include="Services\" />
   </ItemGroup>
