@@ -1,7 +1,13 @@
 ﻿namespace ShoeMeDear.Logic.Common.Models.Addresses
 {
+    /// <summary>
+    /// Represents the real users address.
+    /// </summary>
     public interface IAddress
     {
+        /// <summary>
+        /// Gets or sets unique GUID identifier
+        /// </summary>
         string Id { get; set; }
 
         string Fullname { get; set; }
