@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ShoeMeDear.DataAccess.Common.Models
+namespace ShoeMeDear.DataAccess.Common.Products.Models
 {
     /// <summary>
     /// Model for Product entity is used in database
