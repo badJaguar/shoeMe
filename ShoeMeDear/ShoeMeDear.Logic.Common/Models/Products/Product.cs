@@ -18,7 +18,7 @@
         /// <summary>
         /// Product picture path.
         /// </summary>
-        public string PicturePath { get; set; } //Возможно придется сделать модельку для картинок
+        public string PicturePath { get; set; } // Возможно придется сделать модельку для картинок
 
         /// <summary>
         /// Defines the Product description
