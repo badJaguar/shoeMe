@@ -65,10 +65,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contexts\IDatabase.cs" />
+    <Compile Include="Models\Products\ProductDB.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Models\" />
     <Folder Include="Repositories\" />
     <Folder Include="UoW\" />
   </ItemGroup>

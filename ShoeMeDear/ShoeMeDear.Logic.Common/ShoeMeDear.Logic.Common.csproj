@@ -44,6 +44,7 @@
     <Compile Include="Factories\IServiceFactory.cs" />
     <Compile Include="Models\Addresses\Address.cs" />
     <Compile Include="Models\Addresses\VirtualAddress.cs" />
+    <Compile Include="Models\Products\Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
