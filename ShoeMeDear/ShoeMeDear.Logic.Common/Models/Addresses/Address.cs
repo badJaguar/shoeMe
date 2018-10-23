@@ -27,7 +27,8 @@
         public string Id { get; set; }
 
         /// <summary>
-        /// Gets or sets a value indicating whether postal code is exist or not.
+        /// Gets or sets a value indicating whether postal code is exist or not
+        /// in one address or another.
         /// </summary>
         public bool IsExist { get; set; }
 
