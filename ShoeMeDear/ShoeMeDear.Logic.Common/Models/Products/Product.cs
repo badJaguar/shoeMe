@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ShoeMeDear.Logic.Common.Models.Products
+﻿namespace ShoeMeDear.Logic.Common.Models.Products
 {
     /// <summary>
-    /// Model for Product entity is used in database
+    /// Model for Product entity is used in BL
     /// </summary>
     public class Product
     {
