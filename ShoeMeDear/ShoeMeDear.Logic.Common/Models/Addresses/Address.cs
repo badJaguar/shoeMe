@@ -17,7 +17,7 @@
         public string Country { get; set; }
 
         /// <summary>
-        /// Gets or sets user full name.
+        /// Gets or setsuser full name.
         /// </summary>
         public string Fullname { get; set; }
 
