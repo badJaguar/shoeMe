@@ -69,6 +69,7 @@
   <ItemGroup>
     <Compile Include="Contexts\IDatabase.cs" />
     <Compile Include="Models\Addresses\AddressDb.cs" />
+    <Compile Include="Models\Addresses\VirtualAddressDb.cs" />
     <Compile Include="Models\Products\ProductDB.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

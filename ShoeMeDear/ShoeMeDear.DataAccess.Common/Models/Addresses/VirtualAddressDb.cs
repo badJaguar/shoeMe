@@ -1,6 +1,8 @@
-﻿namespace ShoeMeDear.Logic.Common.Models.Addresses
+﻿using System;
+
+namespace ShoeMeDear.DataAccess.Common.Models.Addresses
 {
-    public class VirtualAddress
+    public class VirtualAddressDb
     {
 
         /// <summary>
@@ -14,10 +16,14 @@
         public string Country { get; set; }
 
         /// <summary>
+        /// Gets or sets address created date.
+        /// </summary>
+        public DateTime Created { get; set; }
+
+        /// <summary>
         /// Gets or sets user full name.
         /// </summary>
         public string FullName { get; set; }
-
         /// <summary>
         /// Gets or sets unique string GUID identifier.
         /// </summary>
@@ -37,6 +43,11 @@
         /// Gets or sets a data of mobile phone number.
         /// </summary>
         public string Mobile { get; set; }
+
+        /// <summary>
+        /// Gets or sets address modifying date time.
+        /// </summary>
+        public DateTime? Modified { get; set; }
 
         /// <summary>
         /// Gets or sets a state in the USA.
