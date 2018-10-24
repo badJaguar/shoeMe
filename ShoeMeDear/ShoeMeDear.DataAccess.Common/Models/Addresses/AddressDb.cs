@@ -20,7 +20,7 @@ namespace ShoeMeDear.DataAccess.Common.Models.Addresses
         public DateTime Created { get; set; }
 
         /// <summary>
-        /// Gets or setsuser full name.
+        /// Gets or sets user full name.
         /// </summary>
         public string Fullname { get; set; }
 
