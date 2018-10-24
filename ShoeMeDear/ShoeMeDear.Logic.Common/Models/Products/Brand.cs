@@ -1,9 +1,9 @@
-﻿namespace ShoeMeDear.Logic.Common.Models.Logo
+﻿namespace ShoeMeDear.Logic.Common.Models.Products
 {
     public class Brand
     {
         /// <summary>
-        /// Gets or sets unique identifier of website brand.
+        /// Gets or sets unique identifier of product brand.
         /// </summary>
         public int Id { get; set; }
 
