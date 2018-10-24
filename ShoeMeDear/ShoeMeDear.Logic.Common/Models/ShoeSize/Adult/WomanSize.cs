@@ -3,9 +3,9 @@
     public class WomanSize
     {
         /// <summary>
-        /// Gets or sets adult woman's size (USA standard).
+        /// Gets or sets adult woman's in centimeters.
         /// </summary>
-        public double Us { get; set; }
+        public double Cm { get; set; }
 
         /// <summary>
         /// Gets or sets adult woman's size (Euro Union standard).
@@ -13,18 +13,23 @@
         public double Eu { get; set; }
 
         /// <summary>
-        /// Gets or sets adult woman's size (United Kingdom standard).
-        /// </summary>
-        public double Uk { get; set; }
-
-        /// <summary>
         /// Gets or sets adult woman's in inches.
         /// </summary>
         public double Inches { get; set; }
 
         /// <summary>
-        /// Gets or sets adult woman's in centimeters.
+        /// Gets or sets adult woman's size (Russian standard).
         /// </summary>
-        public double Cm { get; set; }
+        public double Ru { get; set; }
+
+        /// <summary>
+        /// Gets or sets adult woman's size (United Kingdom standard).
+        /// </summary>
+        public double Uk { get; set; }
+
+        /// <summary>
+        /// Gets or sets adult woman's size (USA standard).
+        /// </summary>
+        public double Us { get; set; }
     }
 }
