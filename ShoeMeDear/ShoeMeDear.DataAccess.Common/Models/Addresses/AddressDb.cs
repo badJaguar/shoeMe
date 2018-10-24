@@ -1,10 +1,8 @@
-﻿namespace ShoeMeDear.Logic.Common.Models.Addresses
+﻿using System;
 
+namespace ShoeMeDear.DataAccess.Common.Models.Addresses
 {
-    /// <summary>
-    /// Represents the real users address.
-    /// </summary>
-    public class Address
+    public class AddressDb
     {
         /// <summary>
         /// Gets or sets user's city.
@@ -17,7 +15,12 @@
         public string Country { get; set; }
 
         /// <summary>
-        /// Gets or setsuser full name.
+        /// Gets or sets address created date.
+        /// </summary>
+        public DateTime Created { get; set; }
+
+        /// <summary>
+        /// Gets or sets user full name.
         /// </summary>
         public string Fullname { get; set; }
 
@@ -27,15 +30,14 @@
         public string Id { get; set; }
 
         /// <summary>
-        /// Gets or sets a value indicating whether postal code is exist or not
-        /// in one address or another.
-        /// </summary>
-        public bool IsExist { get; set; }
-
-        /// <summary>
         /// Gets or sets a data of mobile phone number.
         /// </summary>
         public string Mobile { get; set; }
+
+        /// <summary>
+        /// Gets or sets address modifying date time.
+        /// </summary>
+        public DateTime? Modified { get; set; }
 
         /// <summary>
         /// Gets or sets State/Province/Region/
