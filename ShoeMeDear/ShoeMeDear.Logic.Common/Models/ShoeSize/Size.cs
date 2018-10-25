@@ -1,35 +1,21 @@
 ﻿namespace ShoeMeDear.Logic.Common.Models.ShoeSize
 {
-    public class WomanSize
+    public class Size
     {
-        /// <summary>
-        /// Gets or sets adult woman's in centimeters.
-        /// </summary>
-        public double Cm { get; set; }
 
         /// <summary>
-        /// Gets or sets adult woman's size (Euro Union standard).
+        /// Gets or sets gender and age category.
         /// </summary>
-        public double Eu { get; set; }
+        public string Gender { get; set; }
 
         /// <summary>
-        /// Gets or sets adult woman's in inches.
+        /// Gets or sets unique identifier of a size.
         /// </summary>
-        public double Inches { get; set; }
+        public int Id { get; set; }
 
         /// <summary>
-        /// Gets or sets adult woman's size (Russian standard).
+        /// Gets or sets the value of a size.
         /// </summary>
-        public double Ru { get; set; }
-
-        /// <summary>
-        /// Gets or sets adult woman's size (United Kingdom standard).
-        /// </summary>
-        public double Uk { get; set; }
-
-        /// <summary>
-        /// Gets or sets adult woman's size (USA standard).
-        /// </summary>
-        public double Us { get; set; }
+        public double Value { get; set; }
     }
 }

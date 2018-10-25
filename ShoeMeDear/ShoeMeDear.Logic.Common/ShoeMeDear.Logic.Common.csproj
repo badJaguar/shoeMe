@@ -49,7 +49,7 @@
     <Compile Include="Models\Addresses\VirtualAddress.cs" />
     <Compile Include="Models\Products\Brand.cs" />
     <Compile Include="Models\Products\Product.cs" />
-    <Compile Include="Models\ShoeSize\Adult\WomanSize.cs" />
+    <Compile Include="Models\ShoeSize\Size.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
