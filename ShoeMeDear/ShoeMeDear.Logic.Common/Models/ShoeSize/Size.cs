@@ -1,4 +1,4 @@
-﻿namespace ShoeMeDear.Logic.Common.Models.ShoeSize.Adult
+﻿namespace ShoeMeDear.Logic.Common.Models.ShoeSize
 {
     public class WomanSize
     {
