@@ -1,11 +1,11 @@
 ﻿using System;
 
-namespace ShoeMeDear.DataAccess.Common.Models.Brand
+namespace ShoeMeDear.DataAccess.Common.Models.Products
 {
     public class BrandDb
     {
         /// <summary>
-        /// Gets or sets unique identifier of website brand.
+        /// Gets or sets unique identifier of product brand.
         /// </summary>
         public int Id { get; set; }
 

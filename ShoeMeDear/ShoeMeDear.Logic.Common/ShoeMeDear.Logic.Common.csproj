@@ -47,8 +47,11 @@
     <Compile Include="Factories\IServiceFactory.cs" />
     <Compile Include="Models\Addresses\Address.cs" />
     <Compile Include="Models\Addresses\VirtualAddress.cs" />
-    <Compile Include="Models\Brand\Brand.cs" />
+    <Compile Include="Models\Gender.cs" />
+    <Compile Include="Models\Order.cs" />
+    <Compile Include="Models\Products\Brand.cs" />
     <Compile Include="Models\Products\Product.cs" />
+    <Compile Include="Models\Sizes\ShoeSize.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
