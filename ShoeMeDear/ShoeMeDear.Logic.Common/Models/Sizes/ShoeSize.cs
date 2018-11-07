@@ -1,8 +1,7 @@
-﻿namespace ShoeMeDear.Logic.Common.Models.ShoeSize
+﻿namespace ShoeMeDear.Logic.Common.Models.Sizes
 {
-    public class Size
+    public class ShoeSize
     {
-
         /// <summary>
         /// Gets or sets gender and age category.
         /// </summary>
