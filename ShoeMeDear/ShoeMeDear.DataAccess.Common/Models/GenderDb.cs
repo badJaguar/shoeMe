@@ -1,7 +1,7 @@
-﻿using System;
-
-namespace ShoeMeDear.DataAccess.Common.Models
+﻿namespace ShoeMeDear.DataAccess.Common.Models
 {
+    using System;
+
     public class GenderDb
     {
         /// <summary>

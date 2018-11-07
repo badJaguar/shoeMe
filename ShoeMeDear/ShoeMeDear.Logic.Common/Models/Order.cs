@@ -1,11 +1,12 @@
 ﻿namespace ShoeMeDear.Logic.Common.Models
 {
-    using Products;
+    using System;
+    using System.Collections.Generic;
     using Addresses;
+    using Products;
 
-    public class Order
+    public class Order : IEquatable<Order>
     {
-
         /// <summary>
         /// Gets or sets the local destination address.
         /// </summary>
@@ -20,6 +21,7 @@
         /// Gets or sets delivery price.
         /// </summary>
         public double DeliveryPrice { get; set; }
+
         /// <summary>
         /// Gets or sets private ID for DB saving.
         /// </summary>
@@ -54,5 +56,41 @@
         /// Gets or sets order virtual address.
         /// </summary>
         public virtual VirtualAddress VirtualAddress { get; set; }
+
+        public override bool Equals(object obj)
+        {
+            return this.Equals(obj as Order);
+        }
+
+        public bool Equals(Order other)
+        {
+            return other != null &&
+                   EqualityComparer<Address>.Default.Equals(this.Address, other.Address) &&
+                   this.CountPackages == other.CountPackages &&
+                   this.DeliveryPrice == other.DeliveryPrice &&
+                   this.Id == other.Id &&
+                   EqualityComparer<Product[]>.Default.Equals(this.ProductArr, other.ProductArr) &&
+                   this.PublicId == other.PublicId &&
+                   this.Success == other.Success &&
+                   this.SummaryPrice == other.SummaryPrice &&
+                   EqualityComparer<User>.Default.Equals(this.User, other.User) &&
+                   EqualityComparer<VirtualAddress>.Default.Equals(this.VirtualAddress, other.VirtualAddress);
+        }
+
+        public override int GetHashCode()
+        {
+            var hashCode = 459388872;
+            hashCode = (hashCode * -1521134295) + EqualityComparer<Address>.Default.GetHashCode(this.Address);
+            hashCode = (hashCode * -1521134295) + this.CountPackages.GetHashCode();
+            hashCode = (hashCode * -1521134295) + this.DeliveryPrice.GetHashCode();
+            hashCode = (hashCode * -1521134295) + EqualityComparer<string>.Default.GetHashCode(this.Id);
+            hashCode = (hashCode * -1521134295) + EqualityComparer<Product[]>.Default.GetHashCode(this.ProductArr);
+            hashCode = (hashCode * -1521134295) + EqualityComparer<string>.Default.GetHashCode(this.PublicId);
+            hashCode = (hashCode * -1521134295) + this.Success.GetHashCode();
+            hashCode = (hashCode * -1521134295) + this.SummaryPrice.GetHashCode();
+            hashCode = (hashCode * -1521134295) + EqualityComparer<User>.Default.GetHashCode(this.User);
+            hashCode = (hashCode * -1521134295) + EqualityComparer<VirtualAddress>.Default.GetHashCode(this.VirtualAddress);
+            return hashCode;
+        }
     }
 }
