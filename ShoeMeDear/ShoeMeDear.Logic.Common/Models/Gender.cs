@@ -13,7 +13,7 @@
         public int Id { get; set; }
 
         /// <summary>
-        /// Gets or sets a flag is size was chosen or not.
+        /// Gets or sets a value indicating whether a flag is size was choosen or not.
         /// </summary>
         public bool Added { get; set; }
     }

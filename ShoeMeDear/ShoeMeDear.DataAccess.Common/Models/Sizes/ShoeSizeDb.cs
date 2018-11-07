@@ -1,7 +1,7 @@
-﻿using System;
-
-namespace ShoeMeDear.DataAccess.Common.Models.Sizes
+﻿namespace ShoeMeDear.DataAccess.Common.Models.Sizes
 {
+    using System;
+
     public class ShoeSizeDb
     {
         /// <summary>
