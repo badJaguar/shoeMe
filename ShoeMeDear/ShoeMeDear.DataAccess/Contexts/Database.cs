@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ShoeMeDear.DataAccess.Common.Cotexts;
+using ShoeMeDear.DataAccess.Common.Contexts;
 
 namespace ShoeMeDear.DataAccess.Contexts
 {
-    //TODO: Setup this class
+    // TODO: Setup this class
     public class Database : IDatabase
     {
         private IDatabase _databaseImplementation;
