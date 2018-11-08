@@ -1,10 +1,10 @@
-﻿using System;
-
-namespace ShoeMeDear.DataAccess.Common.Models
+﻿namespace ShoeMeDear.DataAccess.Common.Models
 {
+    using System;
+    using System.Collections.Generic;
     using Addresses;
     using Products;
-    using System.Collections.Generic;
+    using Users;
 
     public class OrderDb : IEquatable<OrderDb>
     {
