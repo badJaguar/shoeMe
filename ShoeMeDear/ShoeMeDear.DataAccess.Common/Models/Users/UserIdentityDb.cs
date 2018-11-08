@@ -2,8 +2,10 @@
 {
     using Microsoft.AspNet.Identity.EntityFramework;
 
+    /// <summary>
+    /// Inner super class of Identity User.
+    /// </summary>
     public class UserIdentityDb : IdentityUser
     {
-        public virtual UserDb UserDb { get; set; }
     }
 }

@@ -1,11 +1,12 @@
 ﻿namespace ShoeMeDear.DataAccess.Common.Models.Users
 {
-    public class UserDb
+    public class UserDb : UserIdentityDb
     {
+        /// <inheritdoc />
         /// <summary>
         /// Gets or sets a unique GUID identifier.
         /// </summary>
-        public string Id { get; set; }
+        public override string Id { get; set; }
 
         /// <summary>
         /// Gets or sets user first name.
@@ -17,15 +18,17 @@
         /// </summary>
         public string LastName { get; set; }
 
+        /// <inheritdoc />
         /// <summary>
         /// Gets or sets user email.
         /// </summary>
-        public string Email { get; set; }
+        public override string Email { get; set; }
 
+        /// <inheritdoc />
         /// <summary>
         /// Gets or sets a value indicating whether is email confirmed or not.
         /// </summary>
-        public bool EmailConfirmed { get; set; }
+        public override bool EmailConfirmed { get; set; }
 
         /// <summary>
         /// Gets or sets user phone number.
