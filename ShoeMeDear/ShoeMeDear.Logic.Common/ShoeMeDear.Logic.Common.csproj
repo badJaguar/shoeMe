@@ -52,6 +52,8 @@
     <Compile Include="Models\Products\Brand.cs" />
     <Compile Include="Models\Products\Product.cs" />
     <Compile Include="Models\Sizes\ShoeSize.cs" />
+    <Compile Include="Models\Users\User.cs" />
+    <Compile Include="Models\Users\UserRole.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

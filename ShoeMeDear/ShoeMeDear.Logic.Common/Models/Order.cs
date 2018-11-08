@@ -1,4 +1,6 @@
-﻿namespace ShoeMeDear.Logic.Common.Models
+﻿using ShoeMeDear.Logic.Common.Models.Users;
+
+namespace ShoeMeDear.Logic.Common.Models
 {
     using Addresses;
     using Products;
