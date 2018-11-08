@@ -74,6 +74,7 @@
     <Compile Include="Models\OrderDb.cs" />
     <Compile Include="Models\Products\BrandDb.cs" />
     <Compile Include="Models\Products\ProductDB.cs" />
+    <Compile Include="Models\ShopDb.cs" />
     <Compile Include="Models\Sizes\ShoeSizeDb.cs" />
     <Compile Include="Models\Users\UserClaimDb.cs" />
     <Compile Include="Models\Users\UserDb.cs" />
