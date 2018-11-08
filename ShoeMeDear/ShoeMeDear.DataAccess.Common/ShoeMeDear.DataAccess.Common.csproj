@@ -71,9 +71,16 @@
     <Compile Include="Models\Addresses\AddressDb.cs" />
     <Compile Include="Models\Addresses\VirtualAddressDb.cs" />
     <Compile Include="Models\GenderDb.cs" />
+    <Compile Include="Models\OrderDb.cs" />
     <Compile Include="Models\Products\BrandDb.cs" />
     <Compile Include="Models\Products\ProductDB.cs" />
+    <Compile Include="Models\ShopDb.cs" />
     <Compile Include="Models\Sizes\ShoeSizeDb.cs" />
+    <Compile Include="Models\Users\UserClaimDb.cs" />
+    <Compile Include="Models\Users\UserDb.cs" />
+    <Compile Include="Models\Users\UserIdentityDb.cs" />
+    <Compile Include="Models\Users\UserLoginDb.cs" />
+    <Compile Include="Models\Users\UserRoleDb.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

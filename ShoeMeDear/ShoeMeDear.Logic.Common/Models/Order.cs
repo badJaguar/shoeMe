@@ -1,11 +1,12 @@
-﻿namespace ShoeMeDear.Logic.Common.Models
+﻿using ShoeMeDear.Logic.Common.Models.Users;
+
+namespace ShoeMeDear.Logic.Common.Models
 {
-    using Products;
     using Addresses;
+    using Products;
 
     public class Order
     {
-
         /// <summary>
         /// Gets or sets the local destination address.
         /// </summary>
@@ -20,6 +21,7 @@
         /// Gets or sets delivery price.
         /// </summary>
         public double DeliveryPrice { get; set; }
+
         /// <summary>
         /// Gets or sets private ID for DB saving.
         /// </summary>
