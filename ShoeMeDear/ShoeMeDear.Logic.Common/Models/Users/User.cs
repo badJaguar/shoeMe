@@ -8,9 +8,14 @@
         public virtual string Id { get; set; }
 
         /// <summary>
-        /// Gets or sets user name.
+        /// Gets or sets user first name.
         /// </summary>
-        public virtual string UserName { get; set; }
+        public string FirstName { get; set; }
+
+        /// <summary>
+        /// Gets or sets user last name.
+        /// </summary>
+        public string LastName { get; set; }
 
         /// <summary>
         /// Gets or sets user email.

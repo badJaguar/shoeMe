@@ -1,9 +1,9 @@
-﻿using Microsoft.AspNet.Identity.EntityFramework;
-
-namespace ShoeMeDear.DataAccess.Common.Models.Users
+﻿namespace ShoeMeDear.DataAccess.Common.Models.Users
 {
+    using Microsoft.AspNet.Identity.EntityFramework;
+
     public class UserIdentityDb : IdentityUser
     {
-        // TODO: Learn Identity.
+        public virtual UserDb UserDb { get; set; }
     }
 }
