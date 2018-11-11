@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace ShoeMeDear.DataAccess.Common.Models.Products
 {
@@ -23,5 +24,7 @@ namespace ShoeMeDear.DataAccess.Common.Models.Products
         /// Gets or sets a date and time when brand was removed.
         /// </summary>
         public DateTime Removed { get; set; }
+
+        public virtual ICollection<ProductDB> Products { get; set; }
     }
 }

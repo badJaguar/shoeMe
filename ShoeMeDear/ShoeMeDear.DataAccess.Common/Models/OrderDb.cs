@@ -6,7 +6,7 @@
     using Products;
     using Users;
 
-    public class OrderDb : IEquatable<OrderDb>
+    public class OrderDb
     {
         /// <summary>
         /// Gets or sets the local destination address.
@@ -36,7 +36,7 @@
         /// <summary>
         /// Gets or sets product(s) in the order.
         /// </summary>
-        public virtual ProductDB[] ProductArr { get; set; }
+        public virtual ICollection<ProductDB> Products { get; set; }
 
         /// <summary>
         /// Gets or sets Order ID for user and delivery.
@@ -70,41 +70,37 @@
 
         public override bool Equals(object obj)
         {
-            return this.Equals(obj as OrderDb);
-        }
-
-        public bool Equals(OrderDb other)
-        {
-            return other != null &&
-                   EqualityComparer<AddressDb>.Default.Equals(this.Address, other.Address) &&
-                   this.CountPackages == other.CountPackages &&
-                   this.Created == other.Created &&
-                   this.DeliveryPrice == other.DeliveryPrice &&
-                   this.Id == other.Id &&
-                   EqualityComparer<ProductDB[]>.Default.Equals(this.ProductArr, other.ProductArr) &&
-                   this.PublicId == other.PublicId &&
-                   this.Success == other.Success &&
-                   this.SummaryPrice == other.SummaryPrice &&
-                   EqualityComparer<DateTime?>.Default.Equals(this.Updated, other.Updated) &&
-                   EqualityComparer<UserDb>.Default.Equals(this.User, other.User) &&
-                   EqualityComparer<VirtualAddressDb>.Default.Equals(this.VirtualAddress, other.VirtualAddress);
+            var db = obj as OrderDb;
+            return db != null &&
+                   EqualityComparer<AddressDb>.Default.Equals(Address, db.Address) &&
+                   CountPackages == db.CountPackages &&
+                   Created == db.Created &&
+                   DeliveryPrice == db.DeliveryPrice &&
+                   Id == db.Id &&
+                   EqualityComparer<ICollection<ProductDB>>.Default.Equals(Products, db.Products) &&
+                   PublicId == db.PublicId &&
+                   Success == db.Success &&
+                   SummaryPrice == db.SummaryPrice &&
+                   EqualityComparer<DateTime?>.Default.Equals(Updated, db.Updated) &&
+                   EqualityComparer<UserDb>.Default.Equals(User, db.User) &&
+                   EqualityComparer<VirtualAddressDb>.Default.Equals(VirtualAddress, db.VirtualAddress);
         }
 
         public override int GetHashCode()
         {
-            var hashCode = -1262987077;
-            hashCode = (hashCode * -1521134295) + EqualityComparer<AddressDb>.Default.GetHashCode(this.Address);
-            hashCode = (hashCode * -1521134295) + this.CountPackages.GetHashCode();
-            hashCode = (hashCode * -1521134295) + this.Created.GetHashCode();
-            hashCode = (hashCode * -1521134295) + this.DeliveryPrice.GetHashCode();
-            hashCode = (hashCode * -1521134295) + EqualityComparer<string>.Default.GetHashCode(this.Id);
-            hashCode = (hashCode * -1521134295) + EqualityComparer<ProductDB[]>.Default.GetHashCode(this.ProductArr);
-            hashCode = (hashCode * -1521134295) + EqualityComparer<string>.Default.GetHashCode(this.PublicId);
-            hashCode = (hashCode * -1521134295) + this.Success.GetHashCode();
-            hashCode = (hashCode * -1521134295) + this.SummaryPrice.GetHashCode();
-            hashCode = (hashCode * -1521134295) + EqualityComparer<DateTime?>.Default.GetHashCode(this.Updated);
-            hashCode = (hashCode * -1521134295) + EqualityComparer<UserDb>.Default.GetHashCode(this.User);
-            hashCode = (hashCode * -1521134295) + EqualityComparer<VirtualAddressDb>.Default.GetHashCode(this.VirtualAddress);
+            var hashCode = -22285903;
+            hashCode = hashCode * -1521134295 + EqualityComparer<AddressDb>.Default.GetHashCode(Address);
+            hashCode = hashCode * -1521134295 + CountPackages.GetHashCode();
+            hashCode = hashCode * -1521134295 + Created.GetHashCode();
+            hashCode = hashCode * -1521134295 + DeliveryPrice.GetHashCode();
+            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(Id);
+            hashCode = hashCode * -1521134295 + EqualityComparer<ICollection<ProductDB>>.Default.GetHashCode(Products);
+            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(PublicId);
+            hashCode = hashCode * -1521134295 + Success.GetHashCode();
+            hashCode = hashCode * -1521134295 + SummaryPrice.GetHashCode();
+            hashCode = hashCode * -1521134295 + EqualityComparer<DateTime?>.Default.GetHashCode(Updated);
+            hashCode = hashCode * -1521134295 + EqualityComparer<UserDb>.Default.GetHashCode(User);
+            hashCode = hashCode * -1521134295 + EqualityComparer<VirtualAddressDb>.Default.GetHashCode(VirtualAddress);
             return hashCode;
         }
     }

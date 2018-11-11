@@ -1,7 +1,8 @@
-﻿using System;
-
-namespace ShoeMeDear.DataAccess.Common.Models.Addresses
+﻿namespace ShoeMeDear.DataAccess.Common.Models.Addresses
 {
+    using System;
+    using ShoeMeDear.DataAccess.Common.Models.Users;
+
     public class VirtualAddressDb
     {
 
@@ -24,6 +25,7 @@ namespace ShoeMeDear.DataAccess.Common.Models.Addresses
         /// Gets or sets user full name.
         /// </summary>
         public string FullName { get; set; }
+
         /// <summary>
         /// Gets or sets unique string GUID identifier.
         /// </summary>
@@ -47,7 +49,7 @@ namespace ShoeMeDear.DataAccess.Common.Models.Addresses
         /// <summary>
         /// Gets or sets address modifying date time.
         /// </summary>
-        public DateTime? Modified { get; set; }
+        public DateTime Modified { get; set; }
 
         /// <summary>
         /// Gets or sets a state in the USA.
@@ -58,5 +60,7 @@ namespace ShoeMeDear.DataAccess.Common.Models.Addresses
         /// Gets or sets zip postal code.
         /// </summary>
         public string ZipPostal { get; set; } // В штатах зипкод пишется через дефис. Поэтому 'string'.
+
+        public virtual UserDb User { get; set; }
     }
 }

@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using ShoeMeDear.DataAccess.Common.Models.Users;
 
 namespace ShoeMeDear.DataAccess.Common.Models.Addresses
 {
@@ -37,7 +39,7 @@ namespace ShoeMeDear.DataAccess.Common.Models.Addresses
         /// <summary>
         /// Gets or sets address modifying date time.
         /// </summary>
-        public DateTime? Modified { get; set; }
+        public DateTime Modified { get; set; }
 
         /// <summary>
         /// Gets or sets State/Province/Region/
@@ -53,5 +55,7 @@ namespace ShoeMeDear.DataAccess.Common.Models.Addresses
         /// Gets or sets zip postal code.
         /// </summary>
         public int ZipPostal { get; set; }
+
+        public virtual ICollection<UserDb> Users { get; set; }
     }
 }

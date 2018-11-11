@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace ShoeMeDear.DataAccess.Common.Models.Products
 {
@@ -33,8 +34,12 @@ namespace ShoeMeDear.DataAccess.Common.Models.Products
         public DateTime Created { get; set; }
 
         /// <summary>
-        /// Gets or sets specifies the timestamp of modifying of any property of the Product in database.
+        /// Gets or sets specifies the timestamp of modifying of any property of the Product in database.C:\Users\aleks\Desktop\ShoeMeDear\ShoeMeDear\ShoeMeDear.DataAccess.Common\Models\Products\ProductDB.cs
         /// </summary>
         public DateTime? Modified { get; set; }
+
+        public virtual BrandDb Brand { get; set; }
+
+        // public virtual ICollection<OrderDb> Orders { get; set; } // TODO: Додумать
     }
 }

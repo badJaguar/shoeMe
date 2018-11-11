@@ -1,4 +1,7 @@
-﻿namespace ShoeMeDear.DataAccess.Common.Models.Users
+﻿using System.Collections.Generic;
+using ShoeMeDear.DataAccess.Common.Models.Addresses;
+
+namespace ShoeMeDear.DataAccess.Common.Models.Users
 {
     public class UserDb : UserIdentityDb
     {
@@ -39,5 +42,11 @@
         /// Gets or sets a value indicating whether phone number confirmed or not.
         /// </summary>
         public bool PhoneConfirmed { get; set; }
+
+        public virtual ICollection<AddressDb> Addresses { get; set; }
+
+        public virtual VirtualAddressDb VirtualAddress { get; set; }
+
+        public virtual ICollection<OrderDb> Orders { get; set; }
     }
 }

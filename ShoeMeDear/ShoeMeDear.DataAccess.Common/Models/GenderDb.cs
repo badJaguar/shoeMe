@@ -22,6 +22,6 @@
         /// <summary>
         /// Gets or sets gender modifying date time.
         /// </summary>
-        public DateTime? Modified { get; set; }
+        public DateTime Modified { get; set; }
     }
 }
