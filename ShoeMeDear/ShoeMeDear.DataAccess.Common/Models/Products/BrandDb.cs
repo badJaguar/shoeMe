@@ -1,8 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace ShoeMeDear.DataAccess.Common.Models.Products
+﻿namespace ShoeMeDear.DataAccess.Common.Models.Products
 {
+    using System;
+    using System.Collections.Generic;
+
     public class BrandDb
     {
         /// <summary>
