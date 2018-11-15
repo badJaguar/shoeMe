@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using ShoeMeDear.DataAccess.Common.Models.Addresses;
+using ShoeMeDear.DataAccess.Common.Models.Sizes;
 
 namespace ShoeMeDear.DataAccess.Common.Models.Users
 {
@@ -48,5 +49,7 @@ namespace ShoeMeDear.DataAccess.Common.Models.Users
         public virtual VirtualAddressDb VirtualAddress { get; set; }
 
         public virtual ICollection<OrderDb> Orders { get; set; }
+
+        public virtual ICollection<ShoeSizeDb> Sizes { get; set; }
     }
 }

@@ -29,7 +29,7 @@ namespace ShoeMeDear.DataAccess.Common.Models.Addresses
         /// <summary>
         /// Gets or sets unique string GUID identifier.
         /// </summary>
-        public string Id { get; set; }
+        public string AddressId { get; set; }
 
         /// <summary>
         /// Gets or sets a data of mobile phone number.
@@ -57,5 +57,7 @@ namespace ShoeMeDear.DataAccess.Common.Models.Addresses
         public int ZipPostal { get; set; }
 
         public virtual ICollection<UserDb> Users { get; set; }
+
+        public virtual ICollection<OrderDb> Orders { get; set; }
     }
 }

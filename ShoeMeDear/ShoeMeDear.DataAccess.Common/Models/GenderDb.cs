@@ -1,4 +1,9 @@
-﻿namespace ShoeMeDear.DataAccess.Common.Models
+﻿using System.Collections.Generic;
+using ShoeMeDear.DataAccess.Common.Models.Products;
+using ShoeMeDear.DataAccess.Common.Models.Sizes;
+using ShoeMeDear.DataAccess.Common.Models.Users;
+
+namespace ShoeMeDear.DataAccess.Common.Models
 {
     using System;
 
@@ -23,5 +28,15 @@
         /// Gets or sets gender modifying date time.
         /// </summary>
         public DateTime Modified { get; set; }
+
+        public UserDb User { get; set; }
+
+        public string UserId { get; set; }
+
+        public ProductDB Product { get; set; }
+
+        public string ProductId { get; set; }
+
+        public virtual ICollection<ShoeSizeDb> Sizes { get; set; }
     }
 }

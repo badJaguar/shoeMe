@@ -1,4 +1,6 @@
-﻿namespace ShoeMeDear.DataAccess.Common.Models.Addresses
+﻿using System.Collections.Generic;
+
+namespace ShoeMeDear.DataAccess.Common.Models.Addresses
 {
     using System;
     using ShoeMeDear.DataAccess.Common.Models.Users;
@@ -62,5 +64,9 @@
         public string ZipPostal { get; set; } // В штатах зипкод пишется через дефис. Поэтому 'string'.
 
         public virtual UserDb User { get; set; }
+
+        public string UserId { get; set; }
+
+        public virtual ICollection<OrderDb> Orders { get; set; }
     }
 }

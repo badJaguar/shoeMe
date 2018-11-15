@@ -7,7 +7,9 @@
         /// <summary>
         /// Gets or sets gender and age category.
         /// </summary>
-        public string Gender { get; set; }
+        public int GenderId { get; set; }
+
+        public virtual GenderDb Gender { get; set; }
 
         /// <summary>
         /// Gets or sets unique identifier of a size.
@@ -22,7 +24,7 @@
         /// <summary>
         /// Gets or sets shoes size modifying date time.
         /// </summary>
-        public DateTime? Modified { get; set; }
+        public DateTime Modified { get; set; }
 
         /// <summary>
         /// Gets or sets shoes size modifying date time.

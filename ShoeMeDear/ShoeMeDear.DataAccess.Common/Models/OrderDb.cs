@@ -13,6 +13,8 @@
         /// </summary>
         public virtual AddressDb Address { get; set; }
 
+        public string AddressId { get; set; }
+
         /// <summary>
         /// Gets or sets how many packages in the order.
         /// </summary>
@@ -63,10 +65,14 @@
         /// </summary>
         public virtual UserDb User { get; set; }
 
+        public string UserId { get; set; }
+
         /// <summary>
         /// Gets or sets order virtual address.
         /// </summary>
         public virtual VirtualAddressDb VirtualAddress { get; set; }
+
+        public string VirtualAddressId { get; set; }
 
         public override bool Equals(object obj)
         {
