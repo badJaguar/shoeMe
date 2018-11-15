@@ -48,6 +48,8 @@ namespace ShoeMeDear.DataAccess.Common.Models.Users
 
         public virtual VirtualAddressDb VirtualAddress { get; set; }
 
+        public string VirtualAddressId { get; set; }
+
         public virtual ICollection<OrderDb> Orders { get; set; }
 
         public virtual ICollection<ShoeSizeDb> Sizes { get; set; }
